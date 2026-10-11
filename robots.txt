@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jarno-matchai.github.io/match-ai-ai-agents/sitemap.xml
