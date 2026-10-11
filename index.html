@@ -1,28 +1,79 @@
 <!DOCTYPE html>
-<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI agents voor het MKB | Match-AI</title>
-<meta name="description" content="Praktische gidsen over het inzetten van AI-agents en AI-collega's in het MKB. Begin klein, meet voor en na, houd een mens in de loop.">
-<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;max-width:760px;margin:0 auto;padding:32px 20px;color:#12121C;line-height:1.65}
-h1{font-size:2rem;line-height:1.2;margin:0 0 8px}h2{font-size:1.25rem;margin-top:2rem;border-left:4px solid #D8F260;padding-left:12px}
-a{color:#12121C}p.nav{border-bottom:1px solid #e5e5e5;padding-bottom:12px}
-ol,ul{padding-left:22px}footer{margin-top:3rem;border-top:1px solid #e5e5e5;padding-top:16px;font-size:.9rem;color:#555}</style></head><body>
-<p class="nav"><p><a href="https://match-ai.nl/?utm_source=github-pages&utm_medium=organic&utm_campaign=backlink">Match-AI</a> | <a href="https://match-ai.nl/nl/ai-collega?utm_source=github-pages&utm_medium=organic&utm_campaign=backlink">AI collega</a> | <a href="https://match-ai.nl/nl/ai-klantenservice?utm_source=github-pages&utm_medium=organic&utm_campaign=backlink">AI klantenservice</a></p></p>
-<h1>AI agents voor het MKB</h1>
-<p>Praktische gidsen over het inzetten van AI-agents en AI-collega's in het MKB. Begin klein, meet voor en na, houd een mens in de loop.</p>
-<h2>Aanpak in vier stappen</h2>
-<ol>
-<li>Kies een proces dat dagelijks of wekelijks terugkomt en waar veel handwerk in zit.</li>
-<li>Beschrijf het proces voordat je automatiseert, anders loopt het vast zodra er iets verandert.</li>
-<li>Houd goedkeuring bij een mens waar het geld, klanten of compliance raakt.</li>
-<li>Meet doorlooptijd en foutmarge voor en na, anders kun je de winst niet aantonen.</li>
-</ol>
-<h2>Waar het in de praktijk op vastloopt</h2>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI agents voor het MKB: 10 werkbare sjablonen</title>
+<meta name="description" content="Tien invulbare sjablonen om bedrijfsprocessen te automatiseren met AI agents: stappen, verantwoordelijkheden en checklists.">
+<link rel="canonical" href="https://jarno-matchai.github.io/match-ai-ai-agents/">
+<style>
+:root{--navy:#12121C;--lime:#D8F260;--ink:#12121C;--mut:#5A5A66;--bg:#FFFFFF;--soft:#F6F7F3}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:var(--navy)}
+header{border-bottom:1px solid #E6E7E1;padding:16px 20px}
+header .wrap{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-weight:700;letter-spacing:.2px}
+.brand a{text-decoration:none;color:var(--navy)}
+.cta{background:var(--lime);color:var(--navy);text-decoration:none;font-weight:700;padding:10px 16px;border-radius:8px;display:inline-block}
+main{max-width:860px;margin:0 auto;padding:28px 20px 80px}
+h1{font-size:32px;line-height:1.2;margin:0 0 16px}
+h2{font-size:24px;line-height:1.3;margin:32px 0 10px;border-bottom:3px solid var(--lime);padding-bottom:6px}
+h3{font-size:18px;margin:22px 0 8px}
+p{margin:12px 0}
+ul,ol{padding-left:22px}
+li{margin:6px 0}
+.top{font-size:14px;color:var(--mut);padding:12px 0}
+.card{border:1px solid #E6E7E1;border-radius:10px;padding:14px 16px;margin:10px 0;background:var(--soft)}
+nav.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
+nav.grid a{border:1px solid #E6E7E1;border-radius:10px;padding:12px 14px;text-decoration:none;background:#fff}
+nav.grid a b{display:block}
+nav.grid a span{color:var(--mut);font-size:13px}
+footer{border-top:1px solid #E6E7E1;margin-top:40px;padding:18px 20px;color:var(--mut);font-size:14px}
+footer .wrap{max-width:860px;margin:0 auto}
+@media(max-width:640px){nav.grid{grid-template-columns:1fr}h1{font-size:26px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand"><a href="https://match-ai.nl/?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Match-AI &middot; match-ai.nl</a></div>
+  <a class="cta" href="https://match-ai.nl/nl/intakeformulier?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Plan een kennismaking</a>
+</div></header>
+<main>
+<h1>Bedrijfsprocessen automatiseren met AI agents</h1>
+<p>Tien werkbare sjablonen voor het MKB. Elk sjabloon zet een terugkerend proces op papier: welke stappen, wie het doet, waar een mens goedkeurt en waar je bijstuurt. Vul ze in en je hebt de basis voor een AI-collega die echt werk overneemt.</p>
+<div class="card"><b>Waarvoor je dit gebruikt</b>
 <ul>
-<li>Te groot beginnen: een project van zes maanden in plaats van een eerste proces in twee weken.</li>
-<li>Geen eigenaar: automatisering zonder verantwoordelijke persoon loopt stil.</li>
-<li>Geen meting: zonder nulmeting is er geen bewijs van winst.</li>
-</ul>
-<h2>Meer weten</h2>
-<p>Match-AI bouwt en beheert AI-collega's voor het MKB. Meer over deze aanpak: <a href="https://match-ai.nl/nl/ai-voor-mkb?utm_source=github-pages&amp;utm_medium=organic&amp;utm_campaign=backlink">match-ai.nl/nl/ai-voor-mkb</a>.</p>
-<footer>Match-AI, beheerde AI-collega's voor het MKB. <a href="https://match-ai.nl/?utm_source=github-pages&amp;utm_medium=organic&amp;utm_campaign=backlink">match-ai.nl</a></footer>
-</body></html>
+<li>Je weet nog niet waar je moet beginnen met AI in je bedrijf.</li>
+<li>Je wilt een proces aanpakken dat elke week terugkomt.</li>
+<li>Je wilt vooraf helder hebben wie waarvoor verantwoordelijk blijft.</li>
+</ul></div>
+<h2>Kies een sjabloon</h2>
+<nav class="grid">
+<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-agent-laten-maken.html"><b>AI agent laten maken</b><span>howto met aanbestedingschecklist</span></a>
+<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-agents-mkb.html"><b>AI agents MKB</b><span>beslis-template om je eerste taak te kiezen</span></a>
+<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-automatisering.html"><b>Proces-scan AI automatisering</b><span>template met scoretabel en checklist</span></a>
+<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-boekhouden.html"><b>AI boekhouden</b><span>werkblad en checklist voor administrateurs</span></a>
+<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-collega.html"><b>Functieprofiel AI collega</b><span>template met taken, grenzen en inwerkplan</span></a>
+<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-implementatie.html"><b>AI-implementatieplan MKB</b><span>template met 4 fasen en checklist</span></a>
+<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-in-de-bouw.html"><b>AI in de bouw</b><span>howto per bouwproces met tabellen en checklist</span></a>
+<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-klantenservice.html"><b>AI klantenservice</b><span>howto met escalatiematrix en checklist</span></a>
+<a href="https://jarno-matchai.github.io/match-ai-ai-agents/bedrijfsprocessen-automatiseren.html"><b>Bedrijfsprocessen automatiseren</b><span>template met stappen, systemen en checklist</span></a>
+<a href="https://jarno-matchai.github.io/match-ai-ai-agents/klantenservice-automatiseren.html"><b>Klantenservice automatiseren</b><span>werkblad met gespreksanalyse en escalatiematrix</span></a>
+</nav>
+<h2>Hoe je ze gebruikt</h2>
+<ol>
+<li>Begin bij een proces dat vaak terugkomt en weinig varieert.</li>
+<li>Vul stap voor stap in. Een tabel pas invullen als de vorige klopt.</li>
+<li>Kies maximaal drie taken voor de eerste ronde.</li>
+<li>Meet voor en na: doorlooptijd en foutmarge.</li>
+<li>Houd goedkeuring bij een mens waar het geld, klanten of compliance raakt.</li>
+</ol>
+<p>Meer weten over een beheerde AI-collega voor het MKB? <a href="https://match-ai.nl/?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Bekijk match-ai.nl</a>.</p>
+</main>
+<footer><div class="wrap">
+  <p><b>Match-AI</b> &middot; beheerde AI-collega's voor het MKB &middot; <a href="https://match-ai.nl/?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">match-ai.nl</a></p>
+  <p>AI-collega in dienst: in vier weken live, daarna als vaste dienst per vier weken.</p>
+</div></footer>
+</body>
+</html>
