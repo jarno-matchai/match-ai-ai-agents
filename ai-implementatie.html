@@ -1,28 +1,53 @@
 <!DOCTYPE html>
-<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI implementatie in het MKB | Match-AI</title>
-<meta name="description" content="Een AI-collega invoeren is een veranderproject, geen software-installatie. Deze stappen houden het beheersbaar en meetbaar.">
-<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;max-width:760px;margin:0 auto;padding:32px 20px;color:#12121C;line-height:1.65}
-h1{font-size:2rem;line-height:1.2;margin:0 0 8px}h2{font-size:1.25rem;margin-top:2rem;border-left:4px solid #D8F260;padding-left:12px}
-a{color:#12121C}p.nav{border-bottom:1px solid #e5e5e5;padding-bottom:12px}
-ol,ul{padding-left:22px}footer{margin-top:3rem;border-top:1px solid #e5e5e5;padding-top:16px;font-size:.9rem;color:#555}</style></head><body>
-<p class="nav"><p><a href="https://match-ai.nl/?utm_source=github-pages&utm_medium=organic&utm_campaign=backlink">Match-AI</a> | <a href="https://match-ai.nl/nl/ai-collega?utm_source=github-pages&utm_medium=organic&utm_campaign=backlink">AI collega</a> | <a href="https://match-ai.nl/nl/ai-klantenservice?utm_source=github-pages&utm_medium=organic&utm_campaign=backlink">AI klantenservice</a></p></p>
-<h1>AI implementatie in het MKB</h1>
-<p>Een AI-collega invoeren is een veranderproject, geen software-installatie. Deze stappen houden het beheersbaar en meetbaar.</p>
-<h2>Aanpak in vier stappen</h2>
-<ol>
-<li>Kies een proces dat dagelijks of wekelijks terugkomt en waar veel handwerk in zit.</li>
-<li>Beschrijf het proces voordat je automatiseert, anders loopt het vast zodra er iets verandert.</li>
-<li>Houd goedkeuring bij een mens waar het geld, klanten of compliance raakt.</li>
-<li>Meet doorlooptijd en foutmarge voor en na, anders kun je de winst niet aantonen.</li>
-</ol>
-<h2>Waar het in de praktijk op vastloopt</h2>
-<ul>
-<li>Te groot beginnen: een project van zes maanden in plaats van een eerste proces in twee weken.</li>
-<li>Geen eigenaar: automatisering zonder verantwoordelijke persoon loopt stil.</li>
-<li>Geen meting: zonder nulmeting is er geen bewijs van winst.</li>
-</ul>
-<h2>Meer weten</h2>
-<p>Match-AI bouwt en beheert AI-collega's voor het MKB. Meer over deze aanpak: <a href="https://match-ai.nl/nl/ai-agent-implementatie?utm_source=github-pages&amp;utm_medium=organic&amp;utm_campaign=backlink">match-ai.nl/nl/ai-agent-implementatie</a>.</p>
-<footer>Match-AI, beheerde AI-collega's voor het MKB. <a href="https://match-ai.nl/?utm_source=github-pages&amp;utm_medium=organic&amp;utm_campaign=backlink">match-ai.nl</a></footer>
-</body></html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI-implementatieplan MKB: template met 4 fasen en checklist</title>
+<meta name="description" content="AI-implementatieplan MKB: template met 4 fasen en checklist">
+<link rel="canonical" href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-implementatie.html">
+<style>
+:root{--navy:#12121C;--lime:#D8F260;--ink:#12121C;--mut:#5A5A66;--bg:#FFFFFF;--soft:#F6F7F3}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:var(--navy)}
+header{border-bottom:1px solid #E6E7E1;padding:16px 20px}
+header .wrap{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-weight:700;letter-spacing:.2px}
+.brand a{text-decoration:none;color:var(--navy)}
+.cta{background:var(--lime);color:var(--navy);text-decoration:none;font-weight:700;padding:10px 16px;border-radius:8px;display:inline-block}
+main{max-width:860px;margin:0 auto;padding:28px 20px 80px}
+h1{font-size:32px;line-height:1.2;margin:0 0 16px}
+h2{font-size:24px;line-height:1.3;margin:32px 0 10px;border-bottom:3px solid var(--lime);padding-bottom:6px}
+h3{font-size:18px;margin:22px 0 8px}
+p{margin:12px 0}
+ul,ol{padding-left:22px}
+li{margin:6px 0}
+.top{font-size:14px;color:var(--mut);padding:12px 0}
+.card{border:1px solid #E6E7E1;border-radius:10px;padding:14px 16px;margin:10px 0;background:var(--soft)}
+nav.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
+nav.grid a{border:1px solid #E6E7E1;border-radius:10px;padding:12px 14px;text-decoration:none;background:#fff}
+nav.grid a b{display:block}
+nav.grid a span{color:var(--mut);font-size:13px}
+footer{border-top:1px solid #E6E7E1;margin-top:40px;padding:18px 20px;color:var(--mut);font-size:14px}
+footer .wrap{max-width:860px;margin:0 auto}
+@media(max-width:640px){nav.grid{grid-template-columns:1fr}h1{font-size:26px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand"><a href="https://match-ai.nl/?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Match-AI &middot; match-ai.nl</a></div>
+  <a class="cta" href="https://match-ai.nl/nl/intakeformulier?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Plan een kennismaking</a>
+</div></header>
+<main>
+<p class="top">Sjabloon van <a href="https://match-ai.nl/?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Match-AI</a> &middot; vrij te gebruiken</p>
+<h1 style="color:#12121C;font-size:32px;line-height:1.2;margin:0 0 16px">AI-implementatieplan voor het MKB: template met vier fasen en checklist</h1><p style='margin:12px 0;line-height:1.6'>De meeste AI-projecten bij het MKB mislukken niet door de techniek, maar door de aanpak: er wordt gestart met een plan in plaats van met een proces. Deze template draait dat om. Je vult hem in vier weken in, per fase één vel.</p><p style='margin:12px 0;line-height:1.6'>Gebruik dit sjabloon als leidraad en vul de onderdelen hieronder in. Elke fase heeft een tabel om in te vullen en een korte uitleg. Onderaan staat de klaar-checklist.</p><p style='margin:12px 0;line-height:1.6'>Je hebt geen technische kennis nodig. Je hebt wel nodig: iemand die het proces nu doet, en een uur per week om te kijken of het klopt.</p><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Hoe je deze template gebruikt</h2><p style='margin:12px 0;line-height:1.6'>1. Vul fase 1 deze week in. Dat is de belangrijkste stap: het juiste proces kiezen.</p><p style='margin:12px 0;line-height:1.6'>2. Vul fase 2 pas in als fase 1 klaar is. Regels opschrijven voor een proces dat je nog niet hebt gekozen levert niets op.</p><p style='margin:12px 0;line-height:1.6'>3. Houd de tabellen kort. Eén regel per stap, geen hele handleiding.</p><p style='margin:12px 0;line-height:1.6'>4. Laat na vier weken de meet-tabel uit fase 4 zien aan wie beslist. Daar valt de keuze: uitbreiden of stoppen.</p><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Fase 1: Kies één proces (week 1)</h2><p style='margin:12px 0;line-height:1.6'>Kies één proces dat elke week terugkomt en waar tijd in zit. Niet het leukste proces en niet het grootste, maar het proces dat het vaakst terugkomt met dezelfde stappen.</p><p style="margin:18px 0 6px"><b>Proces &middot; Wie doet het nu &middot; Uren per week &middot; Fouten per maand &middot; Vast of wisselend &middot; Geschikt?</b></p><p style='margin:12px 0;line-height:1.6'>Kies daarna het proces met de hoogste score op deze drie punten:</p><ul style="margin:12px 0;padding-left:20px"><li style='margin:5px 0'>Het komt elke week terug, niet elk kwartaal.</li><li style='margin:5px 0'>De stappen zijn meestal hetzelfde, met een paar uitzonderingen.</li><li style='margin:5px 0'>Het kost nu meer dan twee uur per week.</li></ul><p style='margin:12px 0;line-height:1.6'>Schrijf in één zin op welk proces je kiest:</p><p style='margin:12px 0;line-height:1.6'>Gekozen proces: ............</p><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Fase 2: Leg de regels vast (week 2)</h2><p style='margin:12px 0;line-height:1.6'>Loop het proces stap voor stap door met degene die het nu doet. Vul per stap in wat er gebeurt en of het een vaste stap of een uitzondering is.</p><p style="margin:18px 0 6px"><b>Stap &middot; Wie doet het nu &middot; Hoe vaak &middot; Vast of uitzondering &middot; Wat moet er gebeuren</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>1</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>2</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>3</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>4</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>5</b></p><p style='margin:12px 0;line-height:1.6'>Maak daarna één afspraak over uitzonderingen en schrijf die op:</p><p style='margin:12px 0;line-height:1.6'>Bij twijfel gaat het naar: ............</p><p style='margin:12px 0;line-height:1.6'>Dit is de belangrijkste regel van het hele plan. Zonder die afspraak neemt de agent beslissingen die een mens moet nemen. Met die afspraak blijft de verantwoordelijkheid waar hij hoort.</p><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Fase 3: Laat de agent meelopen (week 3)</h2><p style='margin:12px 0;line-height:1.6'>In deze week doet de agent het werk, maar controleert een mens alles na. Gebruik deze checklist:</p><ul style="list-style:none;padding-left:0;margin:12px 0"><li style="margin:6px 0">&#9744;&nbsp;De agent heeft toegang tot de systemen die hij nodig heeft, en niet meer dan dat.</li><li style="margin:6px 0">&#9744;&nbsp;De agent kent de prijzen, levertijden en uitzonderingen van dit proces.</li><li style="margin:6px 0">&#9744;&nbsp;De agent weet welke stappen hij zelf doet en welke naar een mens gaan.</li><li style="margin:6px 0">&#9744;&nbsp;Elke dag is er tien minuten controle op wat de agent heeft gedaan.</li><li style="margin:6px 0">&#9744;&nbsp;Fouten worden opgeschreven, niet stil opgelost. Ze zijn de invoer voor fase 4.</li></ul><p style='margin:12px 0;line-height:1.6'>Noteer wat je deze week tegenkomt:</p><p style="margin:18px 0 6px"><b>Datum &middot; Wat ging goed &middot; Wat ging mis &middot; Wat is aangepast</b></p><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Fase 4: Meet en besluit (week 4)</h2><p style='margin:12px 0;line-height:1.6'>Meet dezelfde dingen die je in fase 1 hebt opgeschreven, zodat je kunt vergelijken. Vul de tabel in met de cijfers van voor en na.</p><p style="margin:18px 0 6px"><b>Meting &middot; Voor &middot; Na &middot; Verschil</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Uren per week</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Fouten per maand</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Doorlooptijd per aanvraag</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Wat de klant merkt</b></p><p style='margin:12px 0;line-height:1.6'>Reken daarna de uitkomst uit met je eigen uurtarief:</p><p style="margin:18px 0 6px"><b>Regel &middot; Bedrag</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Uren per week die vrijkomen</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Jouw uurtarief</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Waarde per week (uren x tarief)</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Waarde per jaar (x 46 werkweken)</b></p><p style='margin:12px 0;line-height:1.6'>Vergelijk dat jaarbedrag met wat de oplossing kost. Komt het er niet uit, dan stop je. Dat is geen mislukking: je hebt in vier weken geleerd welk proces wel en niet loont, zonder project van een half jaar.</p><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Klaar-checklist</h2><ul style="list-style:none;padding-left:0;margin:12px 0"><li style="margin:6px 0">&#9744;&nbsp;Ik heb één proces gekozen, niet drie.</li><li style="margin:6px 0">&#9744;&nbsp;De stappen staan op één A4, niet in een handleiding van twintig pagina's.</li><li style="margin:6px 0">&#9744;&nbsp;De regel voor uitzonderingen staat zwart op wit.</li><li style="margin:6px 0">&#9744;&nbsp;Ik heb vier weken gemeten met dezelfde cijfers als bij de start.</li><li style="margin:6px 0">&#9744;&nbsp;Ik heb een besluit genomen: uitbreiden of stoppen.</li></ul><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Wat Match-AI doet</h2><p style='margin:12px 0;line-height:1.6'>Match-AI bouwt AI-collega's voor het MKB. Geen losse tool, maar een collega die meedraait in je bestaande werkwijze. We starten met een inwerkperiode van vier weken, precies zoals deze template. Daarin kiezen we samen het eerste proces, leggen we de regels vast en meten we wat het oplevert. Daarna gaat het over in een vaste dienst per vier weken, tegen een tarief dat we vooraf met je afstemmen.</p><p style='margin:12px 0;line-height:1.6'>Meer dan 40 bedrijven werken inmiddels met een AI-collega van Match-AI, in service, administratie, sales en planning. <a href="https://match-ai.nl/nl/ai-agent-implementatie?utm_source=gdoc-parasite&utm_medium=organic&utm_campaign=keyword-test&utm_content=ai-implementatie" style="color:#12121C;text-decoration:underline">Bespreek in 20 minuten welk proces bij jou als eerste kan</a>.</p><h2 style="color:#12121C;font-size:20px;margin:34px 0 8px">Dit laten inrichten?</h2><p style="margin:8px 0 14px">Match-AI richt dit per bedrijf in en begeleidt de invoering.</p><p style="margin:0"><a href="https://match-ai.nl/nl/ai-agent-implementatie?utm_source=gsite&utm_medium=organic&utm_campaign=ai-agents-templates"><b>Bekijk hoe Match-AI dit aanpakt</b></a></p>
+<p><a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-collega.html">&larr; Functieprofiel AI collega</a></p><p><a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-in-de-bouw.html">AI in de bouw &rarr;</a></p>
+<p><a class="cta" href="https://match-ai.nl/nl/intakeformulier?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Vrijblijvend kennismaken</a></p>
+</main>
+<footer><div class="wrap">
+  <p><b>Match-AI</b> &middot; beheerde AI-collega's voor het MKB &middot; <a href="https://match-ai.nl/?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">match-ai.nl</a></p>
+  <p>AI-collega in dienst: in vier weken live, daarna als vaste dienst per vier weken.</p>
+</div></footer>
+</body>
+</html>
