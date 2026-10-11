@@ -1,5 +1,3 @@
-# AI agents voor het MKB
+# Match-AI AI agents sjablonen
 
-Praktische gidsen over AI-agents en AI-collega's voor het MKB.
-
-Meer: https://match-ai.nl/
+Publieke sjablonenpagina's. Bron: Match-AI.
