@@ -1,28 +1,53 @@
 <!DOCTYPE html>
-<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI klantenservice voor het MKB | Match-AI</title>
-<meta name="description" content="Veelgestelde vragen direct en juist beantwoorden, de rest bij een mens. Zo houd je kwaliteit en snelheid samen.">
-<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;max-width:760px;margin:0 auto;padding:32px 20px;color:#12121C;line-height:1.65}
-h1{font-size:2rem;line-height:1.2;margin:0 0 8px}h2{font-size:1.25rem;margin-top:2rem;border-left:4px solid #D8F260;padding-left:12px}
-a{color:#12121C}p.nav{border-bottom:1px solid #e5e5e5;padding-bottom:12px}
-ol,ul{padding-left:22px}footer{margin-top:3rem;border-top:1px solid #e5e5e5;padding-top:16px;font-size:.9rem;color:#555}</style></head><body>
-<p class="nav"><p><a href="https://match-ai.nl/?utm_source=github-pages&utm_medium=organic&utm_campaign=backlink">Match-AI</a> | <a href="https://match-ai.nl/nl/ai-collega?utm_source=github-pages&utm_medium=organic&utm_campaign=backlink">AI collega</a> | <a href="https://match-ai.nl/nl/ai-klantenservice?utm_source=github-pages&utm_medium=organic&utm_campaign=backlink">AI klantenservice</a></p></p>
-<h1>AI klantenservice voor het MKB</h1>
-<p>Veelgestelde vragen direct en juist beantwoorden, de rest bij een mens. Zo houd je kwaliteit en snelheid samen.</p>
-<h2>Aanpak in vier stappen</h2>
-<ol>
-<li>Kies een proces dat dagelijks of wekelijks terugkomt en waar veel handwerk in zit.</li>
-<li>Beschrijf het proces voordat je automatiseert, anders loopt het vast zodra er iets verandert.</li>
-<li>Houd goedkeuring bij een mens waar het geld, klanten of compliance raakt.</li>
-<li>Meet doorlooptijd en foutmarge voor en na, anders kun je de winst niet aantonen.</li>
-</ol>
-<h2>Waar het in de praktijk op vastloopt</h2>
-<ul>
-<li>Te groot beginnen: een project van zes maanden in plaats van een eerste proces in twee weken.</li>
-<li>Geen eigenaar: automatisering zonder verantwoordelijke persoon loopt stil.</li>
-<li>Geen meting: zonder nulmeting is er geen bewijs van winst.</li>
-</ul>
-<h2>Meer weten</h2>
-<p>Match-AI bouwt en beheert AI-collega's voor het MKB. Meer over deze aanpak: <a href="https://match-ai.nl/nl/ai-klantenservice?utm_source=github-pages&amp;utm_medium=organic&amp;utm_campaign=backlink">match-ai.nl/nl/ai-klantenservice</a>.</p>
-<footer>Match-AI, beheerde AI-collega's voor het MKB. <a href="https://match-ai.nl/?utm_source=github-pages&amp;utm_medium=organic&amp;utm_campaign=backlink">match-ai.nl</a></footer>
-</body></html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI klantenservice: howto met escalatiematrix en checklist</title>
+<meta name="description" content="AI klantenservice: howto met escalatiematrix en checklist">
+<link rel="canonical" href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-klantenservice.html">
+<style>
+:root{--navy:#12121C;--lime:#D8F260;--ink:#12121C;--mut:#5A5A66;--bg:#FFFFFF;--soft:#F6F7F3}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:var(--navy)}
+header{border-bottom:1px solid #E6E7E1;padding:16px 20px}
+header .wrap{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-weight:700;letter-spacing:.2px}
+.brand a{text-decoration:none;color:var(--navy)}
+.cta{background:var(--lime);color:var(--navy);text-decoration:none;font-weight:700;padding:10px 16px;border-radius:8px;display:inline-block}
+main{max-width:860px;margin:0 auto;padding:28px 20px 80px}
+h1{font-size:32px;line-height:1.2;margin:0 0 16px}
+h2{font-size:24px;line-height:1.3;margin:32px 0 10px;border-bottom:3px solid var(--lime);padding-bottom:6px}
+h3{font-size:18px;margin:22px 0 8px}
+p{margin:12px 0}
+ul,ol{padding-left:22px}
+li{margin:6px 0}
+.top{font-size:14px;color:var(--mut);padding:12px 0}
+.card{border:1px solid #E6E7E1;border-radius:10px;padding:14px 16px;margin:10px 0;background:var(--soft)}
+nav.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
+nav.grid a{border:1px solid #E6E7E1;border-radius:10px;padding:12px 14px;text-decoration:none;background:#fff}
+nav.grid a b{display:block}
+nav.grid a span{color:var(--mut);font-size:13px}
+footer{border-top:1px solid #E6E7E1;margin-top:40px;padding:18px 20px;color:var(--mut);font-size:14px}
+footer .wrap{max-width:860px;margin:0 auto}
+@media(max-width:640px){nav.grid{grid-template-columns:1fr}h1{font-size:26px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand"><a href="https://match-ai.nl/?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Match-AI &middot; match-ai.nl</a></div>
+  <a class="cta" href="https://match-ai.nl/nl/intakeformulier?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Plan een kennismaking</a>
+</div></header>
+<main>
+<p class="top">Sjabloon van <a href="https://match-ai.nl/?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Match-AI</a> &middot; vrij te gebruiken</p>
+<h1 style="color:#12121C;font-size:32px;line-height:1.2;margin:0 0 16px">AI klantenservice inrichten: howto met escalatiematrix en checklist</h1><p style='margin:12px 0;line-height:1.6'>De meeste AI klantenservice-projecten lopen vast op dezelfde vier punten: de agent weet niet wat waar is, er is geen grens, de overdracht werkt niet, en niemand meet iets. Deze howto draait dat om. Je vult hem in vier stappen in, met per stap een tabel of een checklist.</p><p style='margin:12px 0;line-height:1.6'>Gebruik dit sjabloon als leidraad en vul de onderdelen hieronder in. Je begint bij de vragen die je team saai vindt, niet bij de moeilijkste klacht. Onderaan staat de klaar-checklist en de escalatiematrix die de grens bewaakt.</p><p style='margin:12px 0;line-height:1.6'>Je hebt geen technische kennis nodig. Je hebt wel nodig: iemand die de klantvragen nu afhandelt, en de echte antwoorden die je klanten krijgen, niet de theorieversie.</p><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Hoe je deze howto gebruikt</h2><p style='margin:12px 0;line-height:1.6'>1. Vul stap 1 deze week in. Dat is het denkwerk dat niemand kan overslaan: bepalen welke vragen wel en niet naar de agent gaan.</p><p style='margin:12px 0;line-height:1.6'>2. Vul de escalatiematrix (stap 2) in voor je start. Zonder die grens neemt de agent beslissingen die een mens moet nemen.</p><p style='margin:12px 0;line-height:1.6'>3. Leg de toonafspraken (stap 3) vast, zodat elk kanaal hetzelfde antwoord en dezelfde toon geeft: mail, chat, WhatsApp of portaal.</p><p style='margin:12px 0;line-height:1.6'>4. Laat de agent twee tot vier weken draaien op één vraagsoort. Meet met dezelfde cijfers als bij de start en voeg pas dan de volgende vraagsoort toe.</p><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Stap 1: welke vragen wel en niet</h2><p style='margin:12px 0;line-height:1.6'>Begin met één vraagsoort: de vraag die het vaakst terugkomt, niet de moeilijkste. Meet eerst hoe vaak die binnenkomt en hoe lang de afhandeling duurt. Dat is je nulmeting. Vul daarna deze tabel in.</p><p style="margin:18px 0 6px"><b>Vraagsoort &middot; Hoe vaak per week &middot; Minuten per afhandeling &middot; Herhaalbaar? &middot; Naar de agent?</b></p><p style='margin:12px 0;line-height:1.6'>Vuistregel voor de laatste kolom:</p><p style="margin:18px 0 6px"><b>Past bij de agent &middot; Gaat naar een mens</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Vraag komt elke week terug</b> &middot; Klacht met emotie of twijfel</p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Antwoord staat vast in jouw informatie</b> &middot; Uitzondering die nergens op lijkt</p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Kost nu meer dan twee uur per week</b> &middot; Iets terugdraaien dat geld of recht raakt</p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Klant hoeft alleen informatie te krijgen</b> &middot; Klant is al boos of dreigt te vertrekken</p><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Stap 2: de escalatiematrix</h2><p style='margin:12px 0;line-height:1.6'>De agent pakt het herhaalbare werk. Alles met emotie, twijfel of een uitzondering gaat naar mensen. Vul per vraagsoort in wat de agent zelf mag, wat hij mag voorstellen en wat direct naar een medewerker gaat. Dit is de belangrijkste tabel van het document.</p><p style="margin:18px 0 6px"><b>Vraagsoort &middot; Agent doet zelf &middot; Agent stelt voor, mens beslist &middot; Direct naar mens &middot; Waarom</b></p><p style='margin:12px 0;line-height:1.6'>Maak daarna één afspraak over de twijfelgevallen en schrijf die op:</p><p style='margin:12px 0;line-height:1.6'>Bij twijfel gaat het naar: ............</p><p style='margin:12px 0;line-height:1.6'>Leg ook vast wat er meegaat bij de overdracht, zodat de klant zijn verhaal niet twee keer hoeft te doen:</p><ul style="list-style:none;padding-left:0;margin:12px 0"><li style="margin:6px 0">&#9744;&nbsp;Wie de klant is en via welk kanaal hij binnenkwam.</li><li style="margin:6px 0">&#9744;&nbsp;Wat er speelt, in twee zinnen samengevat.</li><li style="margin:6px 0">&#9744;&nbsp;Wat de agent al heeft geprobeerd of opgezocht.</li><li style="margin:6px 0">&#9744;&nbsp;Welk ordernummer, dossier of afspraak erbij hoort.</li><li style="margin:6px 0">&#9744;&nbsp;Wat de klant als volgende stap verwacht.</li></ul><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Stap 3: toonafspraken</h2><p style='margin:12px 0;line-height:1.6'>Kies de toon voordat de agent live gaat, anders wordt die per kanaal net anders. Vul in hoe de agent klinkt en wat hij nooit doet.</p><p style="margin:18px 0 6px"><b>Onderwerp &middot; Afspraak</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Aanspreekvorm</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Lengte van een antwoord</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Grapjes of strikt zakelijk</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Wat de agent zegt als een klant naar een mens vraagt</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Wat de agent nooit belooft</b></p><p style='margin:12px 0;line-height:1.6'>Twee dingen staan vast, ook als je ze niet invult: de agent verzint nooit een feit, datum of bedrag, en hij verzwijgt nooit dat er een agent meeleest.</p><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Stap 4: meten en uitbreiden</h2><p style='margin:12px 0;line-height:1.6'>Meet dezelfde dingen die je bij de start hebt opgeschreven, zodat je kunt vergelijken. Vul de tabel in met de cijfers van voor en na.</p><p style="margin:18px 0 6px"><b>Meting &middot; Voor &middot; Na &middot; Verschil</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Vragen per week die de agent zelf afmaakt</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Minuten per afhandeling</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Vragen die alsnog een mens nodig hebben</b></p><p style="margin:4px 0 4px 14px;padding-left:10px;border-left:3px solid #D8F260"><b>Wat de klant merkt</b></p><p style='margin:12px 0;line-height:1.6'>Reken op een inwerkperiode voordat je iets merkt. Een agent moet jouw informatie leren, jouw toon leren en wennen aan de uitzonderingen in jouw bedrijf. Wie na één week verwacht dat alle vragen weg zijn, stopt te vroeg. Voeg pas een nieuwe vraagsoort toe als de eerste aantoonbaar loopt.</p><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Klaar-checklist</h2><ul style="list-style:none;padding-left:0;margin:12px 0"><li style="margin:6px 0">&#9744;&nbsp;Ik ben begonnen met één vraagsoort, niet met drie.</li><li style="margin:6px 0">&#9744;&nbsp;De antwoorden staan op één plek, niet verspreid over oude mails.</li><li style="margin:6px 0">&#9744;&nbsp;De escalatiematrix staat zwart op wit, met een regel voor twijfelgevallen.</li><li style="margin:6px 0">&#9744;&nbsp;De overdracht gaat met een samenvatting, zodat de klant zijn verhaal niet herhaalt.</li><li style="margin:6px 0">&#9744;&nbsp;De toonafspraken gelden op elk kanaal, van mail tot WhatsApp.</li><li style="margin:6px 0">&#9744;&nbsp;Ik meet met dezelfde cijfers als bij de start, en ik breid pas uit wat werkt.</li></ul><h2 style="color:#12121C;font-size:24px;line-height:1.3;margin:30px 0 10px;border-bottom:3px solid #D8F260;padding-bottom:6px">Wat Match-AI doet</h2><p style='margin:12px 0;line-height:1.6'>Match-AI bouwt AI-agenten die het eerste klantcontact overnemen: vragen beantwoorden uit jouw informatie, werk voorbereiden en gesprekken met een samenvatting overdragen aan je team. Geen los stukje techniek, maar een collega die je processen kent.</p><p style='margin:12px 0;line-height:1.6'>We beginnen met een inwerkperiode van vier weken. In die tijd leren we je processen, leggen we de antwoorden vast en stellen we de agent af op jouw toon. Daarna gaat het over in een vaste dienst per vier weken, tegen een tarief dat we vooraf met je afstemmen. Meer dan 40 bedrijven werken inmiddels met een AI-collega van Match-AI.</p><p style='margin:12px 0;line-height:1.6'><a href="https://match-ai.nl/nl/ai-klantenservice?utm_source=gdoc-parasite&utm_medium=organic&utm_campaign=keyword-test&utm_content=ai-klantenservice" style="color:#12121C;text-decoration:underline">Zo ziet AI klantenservice er voor jouw bedrijf uit</a>.</p><h2 style="color:#12121C;font-size:20px;margin:34px 0 8px">Dit laten inrichten?</h2><p style="margin:8px 0 14px">Match-AI richt dit per bedrijf in en begeleidt de invoering.</p><p style="margin:0"><a href="https://match-ai.nl/nl/ai-klantenservice?utm_source=gsite&utm_medium=organic&utm_campaign=ai-agents-templates"><b>Bekijk hoe Match-AI dit aanpakt</b></a></p>
+<p><a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-in-de-bouw.html">&larr; AI in de bouw</a></p><p><a href="https://jarno-matchai.github.io/match-ai-ai-agents/bedrijfsprocessen-automatiseren.html">Bedrijfsprocessen automatiseren &rarr;</a></p>
+<p><a class="cta" href="https://match-ai.nl/nl/intakeformulier?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Vrijblijvend kennismaken</a></p>
+</main>
+<footer><div class="wrap">
+  <p><b>Match-AI</b> &middot; beheerde AI-collega's voor het MKB &middot; <a href="https://match-ai.nl/?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">match-ai.nl</a></p>
+  <p>AI-collega in dienst: in vier weken live, daarna als vaste dienst per vier weken.</p>
+</div></footer>
+</body>
+</html>
