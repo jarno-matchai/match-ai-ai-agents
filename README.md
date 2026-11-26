@@ -1,4 +1,4 @@
-# Your Company OS by Match-AI B.V. (Open Specs & Agent Discovery Hub)
+# Your Company OS (Match-AI B.V.): Open Specs & Agent Discovery Hub
 
 > **Connect, Automate, Evolve.**  
 > **Een product van Match-AI B.V.** (Bunschoten-Spakenburg, Nederland | KvK `42044785` | BTW `NL869453750B01`)
@@ -36,7 +36,7 @@ Interested in launching your own `your<niche>os.app` on Your Company OS? Visit [
 
 ---
 
-## Official Applications (Uniform Title: `Your Company OS by Match-AI`)
+## Official Applications (Uniform Title: `Your Company OS`)
 
 - **Web Platform:** [yourcompanyos.app](https://yourcompanyos.app)
 - **Apple App Store (iOS / macOS):** [apps.apple.com/nl/app/match-ai/id6819363617](https://apps.apple.com/nl/app/match-ai/id6819363617)
