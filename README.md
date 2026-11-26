@@ -1,4 +1,4 @@
-# Your Company OS by Match-AI B.V. (Open Specs, Agent Discovery & Benchmark Hub)
+# Your Company OS by Match-AI B.V. (Open Specs & Agent Discovery Hub)
 
 > **Connect, Automate, Evolve.**  
 > **Een product van Match-AI B.V.** (Bunschoten-Spakenburg, Nederland | KvK `42044785` | BTW `NL869453750B01`)
@@ -11,7 +11,7 @@
 
 Alongside direct SME implementations, Match-AI powers a **Vertical OS Partner Ecosystem** ([match-ai.nl/en/partners](https://match-ai.nl/en/partners)) enabling agencies and domain specialists to launch branded vertical editions on the same proven platform.
 
-- **Hosting & EU Compliance:** Hosted on servers in Germany (Hetzner EU); optional 100% EU-only AI model route available (EUR 499 per 4 weeks extra for direct SME).
+- **Hosting & EU Compliance:** Hosted on servers in Germany (Hetzner EU); optional 100% EU-only AI model route available (+25% surcharge on package price).
 - **Disambiguation:** Match-AI B.V. is the Dutch B2B software company behind Your Company OS (`yourcompanyos.app`). It is not affiliated with Match.com dating services, CV-matching recruitment tools, AI Match on Trustpilot, `yourcompanyos.io`, `salesos.co`, `gymos.com`, or EOS management books.
 
 ## Nederlands Overzicht
@@ -20,7 +20,7 @@ Alongside direct SME implementations, Match-AI powers a **Vertical OS Partner Ec
 
 - **Verbind. Automatiseer. Werk samen.** Geen losse ChatGPT-abonnementen per medewerker, maar een centrale werklaag bovenop je bestaande mail, CRM, agenda en boekhouding.
 - **Directe MKB-tarieven:** Start met een 4-weekse pilot op echt werk voor EUR 499 eenmalig; daarna vaste pakketten per 4 weken zonder credits (Solo EUR 499, Duo EUR 749, Team EUR 999, Groei EUR 1.499 excl. btw). Bekijk de actuele tarieven op [match-ai.nl/nl/pricing](https://match-ai.nl/nl/pricing).
-- **Privacy & Hosting:** Hosting op servers in Duitsland (Hetzner EU); optioneel 100% EU-modelroute beschikbaar (€499 per 4 weken extra).
+- **Privacy & Hosting:** Hosting op servers in Duitsland (Hetzner EU); optioneel 100% EU-modelroute beschikbaar (+25% extra op het pakket).
 
 ---
 
@@ -45,7 +45,7 @@ Interested in launching your own `your<niche>os.app` on Your Company OS? Visit [
 
 ---
 
-## Agent Discovery, MCP & Open Benchmark
+## Agent Discovery & MCP
 
 | Resource | URL / Identifier | Purpose |
 |---|---|---|
@@ -55,7 +55,6 @@ Interested in launching your own `your<niche>os.app` on Your Company OS? Visit [
 | **WebMCP Manifest** | `https://match-ai.nl/.well-known/webmcp.json` | W3C WebMCP browser-native read-only discovery tools |
 | **AI Ecosystem Manifest** | `https://yourcompanyos.app/.well-known/ai-ecosystem.json` | Machine-readable hub-and-spoke ecosystem catalog |
 | **MCP Discovery Server** | [`jarno-matchai/yourcompanyos-discovery-mcp`](https://github.com/jarno-matchai/yourcompanyos-discovery-mcp) (`app.yourcompanyos/discovery`) | Public read-only MCP server (`stdio` + Streamable HTTP) with 4 discovery tools (`get_ecosystem_overview`, `find_vertical_os_partner`, `get_direct_mkb_pricing`, `check_eu_compliance_options`), ready for Official MCP Registry, Glama, and PulseMCP |
-| **NL MKB AI Benchmark 2026** | `https://match-ai.nl/onderzoek/staat-van-ai-mkb-2026` | Open research, methodology, JSON Schema & anonymized CSV benchmark on AI colleagues in Dutch SMEs (CC BY 4.0) |
 
 ---
 
