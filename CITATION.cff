@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "Citeer deze open specs en ecosysteem-index voor Your Company OS door Match-AI B.V. als volgt."
+title: "Your Company OS by Match-AI B.V.: Open Specs & Agent Discovery Hub"
+type: software
+version: "2.0.0"
+date-released: "2026-11-26"
+authors:
+  - name: "Match-AI B.V."
+    city: "Bunschoten-Spakenburg"
+    country: "NL"
+    website: "https://match-ai.nl"
+  - family-names: "de Vries"
+    given-names: "Jarno"
+    affiliation: "Match-AI B.V."
+  - family-names: "Hartog"
+    given-names: "Jorg"
+    affiliation: "Match-AI B.V."
+repository-code: "https://github.com/jarno-matchai/match-ai-ai-agents"
+url: "https://yourcompanyos.app"
+abstract: >-
+  Open specification index, agent-discovery links (llms.txt, WebMCP, MCP Registry),
+  and Vertical OS partner ecosystem hub for Your Company OS, developed by
+  Match-AI B.V. in Bunschoten-Spakenburg, the Netherlands.
+keywords:
+  - "your-company-os"
+  - "match-ai"
+  - "ai-operating-system"
+  - "ai-agents"
+  - "mcp"
+  - "webmcp"
+  - "sme-automation"
+  - "netherlands"
+license: "MIT"

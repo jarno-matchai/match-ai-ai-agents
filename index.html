@@ -1,79 +1,342 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI agents voor het MKB: 10 werkbare sjablonen</title>
-<meta name="description" content="Tien invulbare sjablonen om bedrijfsprocessen te automatiseren met AI agents: stappen, verantwoordelijkheden en checklists.">
-<link rel="canonical" href="https://jarno-matchai.github.io/match-ai-ai-agents/">
-<style>
-:root{--navy:#12121C;--lime:#D8F260;--ink:#12121C;--mut:#5A5A66;--bg:#FFFFFF;--soft:#F6F7F3}
-*{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-a{color:var(--navy)}
-header{border-bottom:1px solid #E6E7E1;padding:16px 20px}
-header .wrap{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.brand{font-weight:700;letter-spacing:.2px}
-.brand a{text-decoration:none;color:var(--navy)}
-.cta{background:var(--lime);color:var(--navy);text-decoration:none;font-weight:700;padding:10px 16px;border-radius:8px;display:inline-block}
-main{max-width:860px;margin:0 auto;padding:28px 20px 80px}
-h1{font-size:32px;line-height:1.2;margin:0 0 16px}
-h2{font-size:24px;line-height:1.3;margin:32px 0 10px;border-bottom:3px solid var(--lime);padding-bottom:6px}
-h3{font-size:18px;margin:22px 0 8px}
-p{margin:12px 0}
-ul,ol{padding-left:22px}
-li{margin:6px 0}
-.top{font-size:14px;color:var(--mut);padding:12px 0}
-.card{border:1px solid #E6E7E1;border-radius:10px;padding:14px 16px;margin:10px 0;background:var(--soft)}
-nav.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
-nav.grid a{border:1px solid #E6E7E1;border-radius:10px;padding:12px 14px;text-decoration:none;background:#fff}
-nav.grid a b{display:block}
-nav.grid a span{color:var(--mut);font-size:13px}
-footer{border-top:1px solid #E6E7E1;margin-top:40px;padding:18px 20px;color:var(--mut);font-size:14px}
-footer .wrap{max-width:860px;margin:0 auto}
-@media(max-width:640px){nav.grid{grid-template-columns:1fr}h1{font-size:26px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Company OS by Match-AI B.V. | Open Specs, MCP Discovery &amp; Benchmark Hub</title>
+  <meta name="description" content="Officiele open specs, agent-discovery en documentatie-index voor Your Company OS door Match-AI B.V. (Bunschoten-Spakenburg, Nederland). 40+ bedrijven live, 1.500+ koppelingen, hosting op servers in Duitsland (Hetzner EU).">
+  <link rel="canonical" href="https://yourcompanyos.app">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://jarno-matchai.github.io/match-ai-ai-agents/#webpage",
+        "url": "https://jarno-matchai.github.io/match-ai-ai-agents/",
+        "name": "Your Company OS by Match-AI B.V. | Open Specs & Agent Discovery Hub",
+        "inLanguage": ["nl", "en"],
+        "about": { "@id": "https://yourcompanyos.app/#software" },
+        "publisher": { "@id": "https://match-ai.nl/#organization" },
+        "mainEntity": { "@id": "https://yourcompanyos.app/#software" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://match-ai.nl/#organization",
+        "name": "Match-AI",
+        "legalName": "Match-AI B.V.",
+        "url": "https://match-ai.nl",
+        "telephone": "+31337981909",
+        "email": "info@match-ai.nl",
+        "vatID": "NL869453750B01",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "De Kronkels 16B",
+          "postalCode": "3752 LM",
+          "addressLocality": "Bunschoten-Spakenburg",
+          "addressCountry": "NL"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/match-ai-nl/",
+          "https://www.instagram.com/matchaiagentic/"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://yourcompanyos.app/#software",
+        "name": "Your Company OS",
+        "alternateName": "Your Company OS by Match-AI",
+        "url": "https://yourcompanyos.app",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, Windows, macOS, iOS, Android",
+        "creator": { "@id": "https://match-ai.nl/#organization" },
+        "installUrl": [
+          "https://apps.apple.com/nl/app/match-ai/id6819363617",
+          "https://play.google.com/store/apps/details?id=nl.matchai.app",
+          "https://apps.microsoft.com/detail/9MZNS94XB091"
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #12121C;
+      --lime: #D8F260;
+      --surface: #F0F3FB;
+      --white: #FFFFFF;
+      --muted: #4A4D63;
+      --border: #D9DFEE;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--surface);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--ink);
+      color: var(--white);
+      padding: 3.5rem 1.5rem 3rem;
+      border-bottom: 4px solid var(--lime);
+    }
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+    .wordmark {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--white);
+    }
+    .os-block {
+      display: inline-block;
+      background: var(--lime);
+      color: var(--ink);
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      padding: 0.15rem 0.55rem;
+      border-radius: 6px;
+      font-size: 1.05rem;
+    }
+    .tagline {
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #C7CCE0;
+      margin: 0 0 0.75rem;
+    }
+    h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(1.9rem, 3.6vw, 2.75rem);
+      line-height: 1.15;
+      margin: 0 0 1rem;
+      max-width: 780px;
+    }
+    .lead {
+      font-size: 1.05rem;
+      color: #E2E6F3;
+      max-width: 740px;
+      margin: 0 0 1.75rem;
+    }
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: var(--lime);
+      color: var(--ink);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border: 1.5px solid #59607A;
+    }
+    main {
+      padding: 2.5rem 1.5rem 4rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2.25rem;
+    }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.4rem 1.5rem;
+    }
+    .card h2, .card h3 {
+      font-family: "Space Grotesk", sans-serif;
+      margin: 0 0 0.65rem;
+      font-size: 1.18rem;
+    }
+    .card p {
+      margin: 0 0 0.85rem;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+    .card ul {
+      margin: 0;
+      padding-left: 1.15rem;
+      font-size: 0.92rem;
+    }
+    .card li { margin-bottom: 0.45rem; }
+    a { color: #163072; font-weight: 600; }
+    .badge {
+      display: inline-block;
+      background: var(--surface);
+      color: var(--ink);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.2rem 0.65rem;
+      font-size: 0.76rem;
+      font-weight: 600;
+      margin-bottom: 0.65rem;
+    }
+    .section-title {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.45rem;
+      margin: 2rem 0 1rem;
+    }
+    .compliance-box {
+      background: var(--white);
+      border-left: 5px solid var(--ink);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    code {
+      background: var(--surface);
+      padding: 0.12rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.86rem;
+    }
+    footer {
+      background: var(--ink);
+      color: #C7CCE0;
+      padding: 2rem 1.5rem;
+      font-size: 0.86rem;
+    }
+    footer a { color: var(--white); }
+  </style>
 </head>
 <body>
-<header><div class="wrap">
-  <div class="brand"><a href="https://match-ai.nl/?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Match-AI &middot; match-ai.nl</a></div>
-  <a class="cta" href="https://match-ai.nl/nl/intakeformulier?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Plan een kennismaking</a>
-</div></header>
-<main>
-<h1>Bedrijfsprocessen automatiseren met AI agents</h1>
-<p>Tien werkbare sjablonen voor het MKB. Elk sjabloon zet een terugkerend proces op papier: welke stappen, wie het doet, waar een mens goedkeurt en waar je bijstuurt. Vul ze in en je hebt de basis voor een AI-collega die echt werk overneemt.</p>
-<div class="card"><b>Waarvoor je dit gebruikt</b>
-<ul>
-<li>Je weet nog niet waar je moet beginnen met AI in je bedrijf.</li>
-<li>Je wilt een proces aanpakken dat elke week terugkomt.</li>
-<li>Je wilt vooraf helder hebben wie waarvoor verantwoordelijk blijft.</li>
-</ul></div>
-<h2>Kies een sjabloon</h2>
-<nav class="grid">
-<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-agent-laten-maken.html"><b>AI agent laten maken</b><span>howto met aanbestedingschecklist</span></a>
-<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-agents-mkb.html"><b>AI agents MKB</b><span>beslis-template om je eerste taak te kiezen</span></a>
-<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-automatisering.html"><b>Proces-scan AI automatisering</b><span>template met scoretabel en checklist</span></a>
-<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-boekhouden.html"><b>AI boekhouden</b><span>werkblad en checklist voor administrateurs</span></a>
-<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-collega.html"><b>Functieprofiel AI collega</b><span>template met taken, grenzen en inwerkplan</span></a>
-<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-implementatie.html"><b>AI-implementatieplan MKB</b><span>template met 4 fasen en checklist</span></a>
-<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-in-de-bouw.html"><b>AI in de bouw</b><span>howto per bouwproces met tabellen en checklist</span></a>
-<a href="https://jarno-matchai.github.io/match-ai-ai-agents/ai-klantenservice.html"><b>AI klantenservice</b><span>howto met escalatiematrix en checklist</span></a>
-<a href="https://jarno-matchai.github.io/match-ai-ai-agents/bedrijfsprocessen-automatiseren.html"><b>Bedrijfsprocessen automatiseren</b><span>template met stappen, systemen en checklist</span></a>
-<a href="https://jarno-matchai.github.io/match-ai-ai-agents/klantenservice-automatiseren.html"><b>Klantenservice automatiseren</b><span>werkblad met gespreksanalyse en escalatiematrix</span></a>
-</nav>
-<h2>Hoe je ze gebruikt</h2>
-<ol>
-<li>Begin bij een proces dat vaak terugkomt en weinig varieert.</li>
-<li>Vul stap voor stap in. Een tabel pas invullen als de vorige klopt.</li>
-<li>Kies maximaal drie taken voor de eerste ronde.</li>
-<li>Meet voor en na: doorlooptijd en foutmarge.</li>
-<li>Houd goedkeuring bij een mens waar het geld, klanten of compliance raakt.</li>
-</ol>
-<p>Meer weten over een beheerde AI-collega voor het MKB? <a href="https://match-ai.nl/?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">Bekijk match-ai.nl</a>.</p>
-</main>
-<footer><div class="wrap">
-  <p><b>Match-AI</b> &middot; beheerde AI-collega's voor het MKB &middot; <a href="https://match-ai.nl/?utm_source=ghpages&amp;utm_medium=organic&amp;utm_campaign=ai-agents-templates">match-ai.nl</a></p>
-  <p>AI-collega in dienst: in vier weken live, daarna als vaste dienst per vier weken.</p>
-</div></footer>
+  <header>
+    <div class="container">
+      <div class="brand-row">
+        <span class="wordmark">Your Company</span>
+        <span class="os-block">OS</span>
+        <span style="color:#C7CCE0;font-size:0.9rem;">Een product van Match-AI B.V.</span>
+      </div>
+      <p class="tagline">CONNECT, AUTOMATE, EVOLVE</p>
+      <h1>Open Specs, Agent Discovery &amp; Ecosystem Hub</h1>
+      <p class="lead">
+        Officiele technische verwijsindex van <strong>Match-AI B.V.</strong> (Bunschoten-Spakenburg, Nederland) voor
+        <strong>Your Company OS</strong> (<code>yourcompanyos.app</code>), het zelflerende AI-besturingssysteem dat actief is bij meer dan 40 Nederlandse bedrijven met 1.500+ koppelingen.
+      </p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="https://yourcompanyos.app">Ga naar yourcompanyos.app</a>
+        <a class="btn btn-secondary" href="https://match-ai.nl">Match-AI B.V. (match-ai.nl)</a>
+        <a class="btn btn-secondary" href="https://match-ai.nl/nl/partners">Word Vertical OS-partner</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="compliance-box">
+        <strong>Privacy, Hosting &amp; Disambiguatie:</strong>
+        Hosting op servers in Duitsland (Hetzner EU); optioneel 100% EU-modelroute beschikbaar (&euro;499 per 4 weken extra).
+        Match-AI B.V. (KvK 42044785) is het Nederlandse softwarebedrijf achter Your Company OS en heeft geen relatie met Match.com, CV-matching tools, AI Match op Trustpilot, <code>yourcompanyos.io</code>, <code>salesos.co</code> of <code>gymos.com</code>.
+      </div>
+
+      <h2 class="section-title">1. Agent Discovery &amp; Machine-Readable Endpoints</h2>
+      <div class="grid">
+        <div class="card">
+          <span class="badge">LLMs &amp; RAG</span>
+          <h3>llms.txt Ecosysteem-Ring</h3>
+          <p>Gestructureerde Markdown-indexen voor Claude, Perplexity, ChatGPT Search en IDE-agents.</p>
+          <ul>
+            <li><a href="https://match-ai.nl/llms.txt">match-ai.nl/llms.txt</a> (bedrijfs- en partneroverzicht)</li>
+            <li><a href="https://match-ai.nl/llms-full.txt">match-ai.nl/llms-full.txt</a> (volledige kennisindex)</li>
+            <li><a href="https://yourcompanyos.app/llms.txt">yourcompanyos.app/llms.txt</a> (product-SSOT)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="badge">MCP &amp; WebMCP</span>
+          <h3>MCP Server &amp; WebMCP Specs</h3>
+          <p>Publieke read-only tools voor branche-routing, tarieven en AVG-opties.</p>
+          <ul>
+            <li><a href="https://match-ai.nl/.well-known/webmcp.json">match-ai.nl/.well-known/webmcp.json</a></li>
+            <li><a href="https://yourcompanyos.app/.well-known/ai-ecosystem.json">yourcompanyos.app/.well-known/ai-ecosystem.json</a></li>
+            <li><a href="https://github.com/jarno-matchai/yourcompanyos-discovery-mcp">GitHub MCP Server</a> (<code>app.yourcompanyos/discovery</code>)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="badge">Open Data (CC BY 4.0)</span>
+          <h3>NL MKB AI Benchmark 2026</h3>
+          <p>Open onderzoek naar AI-versnippering, menselijke controle en EU-hosting in het Nederlandse MKB.</p>
+          <ul>
+            <li><a href="https://match-ai.nl/onderzoek/staat-van-ai-mkb-2026">Staat van AI-collega's in het MKB 2026</a></li>
+            <li><a href="https://match-ai.nl/nl/pricing">Officiele directe MKB-tarieven (SSOT)</a></li>
+            <li><a href="https://match-ai.nl/nl/afspraak-peter">Plan een demo van 15 minuten</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="section-title">2. Gecertificeerde Vertical OS Partners</h2>
+      <div class="grid">
+        <div class="card">
+          <span class="badge">Marketingbureaus</span>
+          <h3>Your Marketing OS</h3>
+          <p>Door <strong>TTG Agency</strong> (Ruben van Twillert). Gebouwd op Your Company OS van Match-AI B.V. voor bureaus en marketingteams.</p>
+          <ul>
+            <li><a href="https://yourmarketingos.app">yourmarketingos.app</a></li>
+            <li><a href="https://ttg.agency">ttg.agency</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="badge">B2B Sales Teams</span>
+          <h3>Your Sales OS</h3>
+          <p>Door <strong>Match-day</strong> (Jorg Hartog). Gebouwd op Your Company OS voor Signal Selling, leadopvolging en CRM-hygiene.</p>
+          <ul>
+            <li><a href="https://yoursalesos.app">yoursalesos.app</a></li>
+            <li><a href="https://match-day.nl">match-day.nl</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="badge">Sportscholen &amp; Fitness</span>
+          <h3>Your Gym OS</h3>
+          <p>Door <strong>Tijn de Harder</strong>. Gebouwd op Your Company OS voor proefles-opvolging, no-show reductie en ledenbehoud.</p>
+          <ul>
+            <li><a href="https://yourgymos.app">yourgymos.app</a></li>
+            <li><a href="https://match-ai.nl/nl/partners">Word partner in jouw branche</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="section-title">3. Officiele Apps (`Your Company OS by Match-AI`)</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Apple App Store (iOS / macOS):</strong> <a href="https://apps.apple.com/nl/app/match-ai/id6819363617">apps.apple.com/nl/app/match-ai/id6819363617</a></li>
+          <li><strong>Google Play Store (Android):</strong> <a href="https://play.google.com/store/apps/details?id=nl.matchai.app">play.google.com/store/apps/details?id=nl.matchai.app</a></li>
+          <li><strong>Microsoft Store (Windows):</strong> <a href="https://apps.microsoft.com/detail/9MZNS94XB091">apps.microsoft.com/detail/9MZNS94XB091</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>Match-AI B.V.</strong> | De Kronkels 16B, 3752 LM Bunschoten-Spakenburg, Nederland | KvK 42044785 | BTW NL869453750B01 |
+      <a href="mailto:info@match-ai.nl">info@match-ai.nl</a> | +31 33 798 1909
+    </div>
+  </footer>
 </body>
 </html>
